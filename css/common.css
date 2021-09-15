@@ -1,0 +1,91 @@
+/* custom CSS properties */
+:root {
+  --accent-color: #2196F3;
+
+  --bg-white-color: #FFFFFF;
+  --bg-black-color: #2F303A;
+  --bg-gray-color: #F5F4FA;
+
+  --font-bold-color: #212121;
+  --font-primary-color: #757575;
+  --font-inversed-color: #FFFFFF;
+  --font-trasnparent-color: rgba(255, 255, 255, 0.6);
+}
+
+body {
+  background-color: var(--bg-white-color);
+  color: var(--font-primary-color);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+footer {
+  background-color: var(--bg-black-color);
+}
+
+/* typographical preset */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--font-bold-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.logo {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  /* identical to box height */
+
+  letter-spacing: 0.03em;
+}
+
+.logo-accent {
+  color: var(--accent-color);
+}
+
+.site-nav {
+  color: var(--font-bold-color);
+}
+
+.footer-contact {
+  color: var(--font-trasnparent-color);
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+.selectable-button.primary {
+  color: var(--font-inversed-color);
+  background-color: var(--accent-color);
+}
+
+.selectable-button.primary:hover,
+.selectable-button.primary:focus {
+  color: var(--font-bold-color);
+  background-color: var(--bg-gray-color);
+}
+
+.selectable-button.secondary {
+  color: var(--font-bold-color);
+  background-color: var(--bg-gray-color);
+}
+
+.selectable-button.secondary:hover,
+.selectable-button.secondary:focus {
+  color: var(--font-inversed-color);
+  background-color: var(--accent-color);
+}
