@@ -21,3 +21,7 @@
 .member-name {
 
 }
+
+.team {
+  background-color: var(--bg-gray-color);
+}

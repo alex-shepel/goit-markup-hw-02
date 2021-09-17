@@ -41,7 +41,7 @@ button {
 
 .logo {
   font-family: Raleway, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
 }
@@ -67,24 +67,16 @@ button {
   color: var(--accent-color);
 }
 
-.selectable-button.primary {
+.button.primary,
+.button.secondary:hover,
+.button.secondary:focus {
   color: var(--font-inversed-color);
   background-color: var(--accent-color);
 }
 
-.selectable-button.primary:hover,
-.selectable-button.primary:focus {
+.button.secondary,
+.button.primary:hover,
+.button.primary:focus {
   color: var(--font-bold-color);
   background-color: var(--bg-gray-color);
-}
-
-.selectable-button.secondary {
-  color: var(--font-bold-color);
-  background-color: var(--bg-gray-color);
-}
-
-.selectable-button.secondary:hover,
-.selectable-button.secondary:focus {
-  color: var(--font-inversed-color);
-  background-color: var(--accent-color);
 }
