@@ -1,4 +1,5 @@
 /* custom CSS properties */
+
 :root {
   --accent-color: #2196F3;
 
@@ -11,6 +12,14 @@
   --font-inversed-color: #FFFFFF;
   --font-trasnparent-color: rgba(255, 255, 255, 0.6);
 }
+
+/* typographical preset */
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--font-bold-color);
+}
+
+/* inheritance preset */
 
 body {
   background-color: var(--bg-white-color);
@@ -26,19 +35,7 @@ footer {
   color: var(--font-inversed-color);
 }
 
-/* typographical preset */
-h1, h2, h3, h4, h5, h6 {
-  color: var(--font-bold-color);
-}
-
-button {
-  /* Do we really need this code line? */
-  font-family: inherit;
-}
-
-.list {
-  list-style: none;
-}
+/* logo */
 
 .logo {
   font-family: Raleway, sans-serif;
@@ -60,6 +57,13 @@ button {
   color: var(--font-inversed-color);
 }
 
+/* header */
+
+.header .link:hover,
+.header .link:focus {
+  color: var(--accent-color);
+}
+
 .header .link {
   font-weight: 500;
   font-size: 14px;
@@ -70,6 +74,10 @@ button {
 
 .site-nav .link {
   color: var(--font-bold-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
 }
 
 .header-contact {
@@ -85,13 +93,10 @@ button {
   text-decoration: none;
 }
 
-.link:hover,
-.link:focus {
-  color: var(--accent-color);
-}
+/* buttons */
 
-.site-nav .link.current {
-  color: var(--accent-color);
+button {
+  font-family: inherit;
 }
 
 .button.primary,
@@ -106,4 +111,10 @@ button {
 .button.primary:focus {
   color: var(--font-bold-color);
   background-color: var(--bg-gray-color);
+}
+
+/* lists */
+
+.list {
+  list-style: none;
 }
