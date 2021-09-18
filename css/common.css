@@ -23,6 +23,7 @@ body {
 
 footer {
   background-color: var(--bg-black-color);
+  color: var(--font-inversed-color);
 }
 
 /* typographical preset */
@@ -44,18 +45,44 @@ button {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
+  text-decoration: none;
 }
 
 .logo-accent {
   color: var(--accent-color);
 }
 
-.site-nav {
+.header .logo {
   color: var(--font-bold-color);
 }
 
+.footer .logo {
+  color: var(--font-inversed-color);
+}
+
+.header .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.site-nav .link {
+  color: var(--font-bold-color);
+}
+
+.header-contact {
+  color: var(--font-primary-color);
+}
+
 .footer-contact {
+  font-style: normal;
+}
+
+.footer-contact.link {
   color: var(--font-trasnparent-color);
+  text-decoration: none;
 }
 
 .link:hover,
